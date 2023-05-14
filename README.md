@@ -5,7 +5,8 @@ It does a pretty good job in my opinion and also aligns colors of the both fishe
 # usage
 - edit variables at ~line 170
 
-    # values of the camera, can be modified in the pygame interface
+### values of the camera, can be modified in the pygame interface
+
     lVertOffset = 30
     fov = 199.2
     rYaw = 91.2
