@@ -1,10 +1,20 @@
 # dualfisheyeTo360
 python script to convert a dual fisheye image from a yi 360 to a equirectangular image
+It does a pretty good job in my opinion and also aligns colors of the both fisheyes
 
 # usage
-edit variables at the beginning of the file to set values
+- edit variables at ~line 170
 
-in the pygame interface use:
+    # values of the camera, can be modified in the pygame interface
+    lVertOffset = 30
+    fov = 199.2
+    rYaw = 91.2
+    rPitch = 0.0
+    rRoll = 1.9
+    left_color_overlap = True # use the left or the right side of the overlapping parts of the image to do color matching
+
+
+## In the pygame interface use
 - w,s: Roll control
 - a,d: Yaw control
 - q,e: Pitch control
@@ -14,5 +24,5 @@ in the pygame interface use:
 -  -> also check the console output for the values to copy into the script for default values
 
 # requirements
-see imports
-also included in this repo https://github.com/cynricfu/multi-band-blending
+- see imports
+- also included in this repo https://github.com/cynricfu/multi-band-blending
